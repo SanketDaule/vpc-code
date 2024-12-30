@@ -1,6 +1,6 @@
 
 module "vpc" {
-  for_each = var.vpcs  # Loop over the map of VPC configurations
+  for_each = var.vpcs 
 
   source = "./modules/vpc-module"  # Path to your VPC module
 
